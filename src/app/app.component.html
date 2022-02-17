@@ -1,0 +1,24 @@
+<hello name="{{ name }}"></hello>
+<p class="{{ className }}">Start editing to see some magic happen :)</p>
+
+<p [style.font-size.%]="50" [innerHtml]="mytest"></p>
+<p [class]="classNameTwo">Start editing to see some magic happen :)</p>
+
+<p bind-class="classNameThree">Start editing to see some magic happen :)</p>
+<input id="sachin" value="sachin" (change)="print($event)" />
+<br />
+<input id="sachinTen" value="sachinTen" [(ngModel)]="name" />
+<br />
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td colspan="3">table data</td>
+    </tr>
+    <tr>
+      <td>data one</td>
+      <td>data two</td>
+      <td>data three</td>
+    </tr>
+  </tbody>
+</table>
